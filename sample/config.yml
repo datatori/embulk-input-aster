@@ -1,0 +1,13 @@
+in:
+  type: aster
+  driver_class: com.asterdata.ncluster.Driver
+  host: 127.0.0.1
+  user: beehive
+  password: "beehive"
+  database: public
+  query: select * from nc_system.nc_user_tables;
+out:
+  type: command
+  command: "cat - > task.$INDEX.$SEQID.csv"
+  formatter:
+    type: csv
