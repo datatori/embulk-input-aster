@@ -11,3 +11,4 @@ build/
 .ruby-version
 example2
 *.iml
+.DS_Store
